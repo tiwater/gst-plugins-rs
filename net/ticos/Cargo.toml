@@ -10,7 +10,6 @@ repository = "https://github.com/tiwater/ticos-agent"
 gst.workspace = true
 gst-base.workspace = true
 gst-audio.workspace = true
-gst-sys.workspace = true
 gst-sys = { workspace = true }
 nnstreamer-rs.workspace = true
 similari = { package = "similari-trackers-rs", version = "0.26", default-features = false }
