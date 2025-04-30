@@ -21,7 +21,6 @@ http = { version = "1.0" }
 url = "2"
 base64 = "0.22"
 lazy_static = "1.4"
-gst-sys = { workspace = true }
 
 [dev-dependencies]
 gstreamer-check.workspace = true
