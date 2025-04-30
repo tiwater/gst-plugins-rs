@@ -5,3 +5,4 @@ target
 .vscode
 builddir
 .meson-subproject-wrap-hash.txt
+.DS_Store

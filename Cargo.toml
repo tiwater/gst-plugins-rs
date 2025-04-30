@@ -40,6 +40,8 @@ members = [
     "net/webrtc/protocol",
     "net/webrtc/signalling",
     "net/quinn",
+    "net/ticos",
+    "net/openai",
 
     "text/ahead",
     "text/json",
@@ -116,6 +118,8 @@ default-members = [
     "video/hsv",
     "video/png",
     "video/rav1e",
+    "net/ticos",
+    "net/openai",
 ]
 
 [profile.release]

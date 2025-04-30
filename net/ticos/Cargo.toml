@@ -1,0 +1,33 @@
+[package]
+name = "gst-ticos"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+description = "GStreamer plugins to interact with TICOS cloud"
+repository = "https://github.com/tiwater/ticos-agent"
+
+[dependencies]
+gst.workspace = true
+gst-base.workspace = true
+gst-audio.workspace = true
+gst-sys.workspace = true
+nnstreamer-rs.workspace = true
+similari = { package = "similari-trackers-rs", version = "0.26", default-features = false }
+bincode = "1"
+# WebSocket 相关依赖
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = { version = "0.21", features = ["connect", "native-tls"] }
+futures = "0.3"
+lazy_static = "1.4"
+once_cell = "1.19"
+url = "2.5"
+atomic_refcell = "0.1"
+http = "1.0"
+
+[lib]
+name = "gstticos"
+crate-type = ["rlib", "cdylib"]
+path = "src/lib.rs"
+
+[build-dependencies]
+gst-plugin-version-helper.workspace = true
