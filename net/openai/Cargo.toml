@@ -23,7 +23,7 @@ base64 = "0.22"
 lazy_static = "1.4"
 
 [dev-dependencies]
-gstreamer-check.workspace = true
+gst-check.workspace = true
 
 [build-dependencies]
 gst-plugin-version-helper.workspace = true
