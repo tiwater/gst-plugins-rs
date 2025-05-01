@@ -1,5 +1,5 @@
 [package]
-name = "gst-openai"
+name = "gst-plugin-openai"
 version.workspace =true
 edition.workspace = true
 rust-version.workspace = true
@@ -23,7 +23,7 @@ base64 = "0.22"
 lazy_static = "1.4"
 
 [dev-dependencies]
-gst-check.workspace = true
+gstreamer-check.workspace = true
 
 [build-dependencies]
 gst-plugin-version-helper.workspace = true

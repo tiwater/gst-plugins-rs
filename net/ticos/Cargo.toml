@@ -1,5 +1,5 @@
 [package]
-name = "gst-ticos"
+name = "gst-plugin-ticos"
 version.workspace = true
 edition.workspace = true
 rust-version.workspace = true
