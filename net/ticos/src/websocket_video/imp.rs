@@ -10,7 +10,10 @@ use tokio_tungstenite::{
     connect_async, 
     tungstenite::protocol::Message as WsMessage, 
 };
-use futures::{SinkExt, StreamExt, future::AbortHandle as FuturesAbortHandle};
+// 修正 futures 导入
+use futures::future::AbortHandle as FuturesAbortHandle;
+use futures::SinkExt;
+use futures::StreamExt;
 use url::Url;
 use once_cell::sync::Lazy;
 
