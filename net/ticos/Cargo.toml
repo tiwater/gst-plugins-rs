@@ -23,18 +23,32 @@ atomic_refcell = "0.1"
 http = "1.0"
 
 # 根据平台配置不同的 tokio 依赖
-[target.'cfg(not(target_os = "android"))'.dependencies]
-tokio = { version = "1", features = ["rt", "rt-multi-thread", "net", "time"] }
-tokio-tungstenite = { version = "0.21", features = ["connect"] }
+#[target.'cfg(not(target_os = "android"))'.dependencies]
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = { version = "0.21",  features = ["connect", "native-tls"] }
 
-[target.'cfg(target_os = "android")'.dependencies]
-tokio = { version = "1", features = ["rt", "net", "time"] }
-tokio-tungstenite = { version = "0.21", default-features = false }
+#[target.'cfg(target_os = "android")'.dependencies]
+#tokio = { version = "1", features = ["rt", "net", "time"] }
+#tokio-tungstenite = { version = "0.21",  features = ["connect", "native-tls"] }
 
 [lib]
 name = "gstticos"
 crate-type = ["rlib", "cdylib"]
 path = "src/lib.rs"
 
+[features]
+static = []
+capi = []
+
 [build-dependencies]
 gst-plugin-version-helper.workspace = true
+
+[package.metadata.capi]
+min_version = "0.8.0"
+
+[package.metadata.capi.header]
+enabled = false
+
+[package.metadata.capi.library]
+install_subdir = "gstreamer-1.0"
+versioning = false
