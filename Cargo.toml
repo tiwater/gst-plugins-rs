@@ -170,3 +170,4 @@ gst-utils = { package = "gstreamer-utils", git = "https://gitlab.freedesktop.org
 gst-video = { package = "gstreamer-video", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs", branch = "main" }
 gst-webrtc = { package = "gstreamer-webrtc", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs", branch = "main" }
 nnstreamer-rs = { package = "nnstreamer-rs", path = "./net/nnstreamer-rs" }
+libc = "0.2"
