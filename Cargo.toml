@@ -169,3 +169,4 @@ gst-tag = { package = "gstreamer-tag", git = "https://gitlab.freedesktop.org/gst
 gst-utils = { package = "gstreamer-utils", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs", branch = "main" }
 gst-video = { package = "gstreamer-video", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs", branch = "main" }
 gst-webrtc = { package = "gstreamer-webrtc", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs", branch = "main" }
+nnstreamer-rs = { package = "nnstreamer-rs", path = "./net/nnstreamer-rs" }

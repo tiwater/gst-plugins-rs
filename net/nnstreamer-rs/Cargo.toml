@@ -1,0 +1,10 @@
+[package]
+name = "nnstreamer-rs"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+gst.workspace = true
+libc.workspace = true
+gst-sys.workspace = true
