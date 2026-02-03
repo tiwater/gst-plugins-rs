@@ -22,7 +22,7 @@ rustls = { version = "0.23", default-features = false, features = ["std"] }
 rustls-pemfile = "2"
 rustls-pki-types = "1"
 rcgen = "0.13"
-bytes = "1.5.0"
+bytes = "1.11.1"
 thiserror = "2"
 async-channel = "2.3"
 itertools = "0.14"
